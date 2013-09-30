@@ -305,6 +305,13 @@ OPENCORE += libomx_amr_component_lib
 OPENCORE += pvplayer
 OPENCORE += pvplayer_engine_test
 
+#PCSC
+PCSC := pcscd
+PCSC += libifdsmartcardapi
+PCSC += libpcsclite
+PCSC += testpcsc
+PCSC += testpcsc_sendapdu
+
 #PPP
 PPP := ip-up-vpn
 
@@ -415,6 +422,7 @@ PRODUCT_PACKAGES += $(MM_AUDIO)
 PRODUCT_PACKAGES += $(MM_CORE)
 PRODUCT_PACKAGES += $(MM_VIDEO)
 PRODUCT_PACKAGES += $(OPENCORE)
+PRODUCT_PACKAGES += $(PCSC)
 PRODUCT_PACKAGES += $(PPP)
 PRODUCT_PACKAGES += $(PVOMX)
 PRODUCT_PACKAGES += $(SENSORS_HARDWARE)
